@@ -11,7 +11,7 @@ Two estimator families:
 > *A novel approach for estimating largest Lyapunov exponents in one-dimensional chaotic time series using machine learning*
 > Chaos 35, 101101 (2025) — Andrei Velichko; Maksim Belyaev; Petr Boriskov
 > DOI: [10.1063/5.0289352](https://doi.org/10.1063/5.0289352))
-> Full text: https://www.researchgate.net/profile/Andrei-Velichko
+Full text: https://www.researchgate.net/profile/Andrei-Velichko
 
 ---
 
