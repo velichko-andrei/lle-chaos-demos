@@ -1,0 +1,269 @@
+{
+  "stamp": "20251021-170212",
+  "unix": 1761055332,
+  "run_dir": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332",
+  "method": "BASE",
+  "config": {
+    "R_POINTS": 1000,
+    "WARMUP": 1000,
+    "SERIES_LEN": 1000,
+    "BIFUR_POINTS": 800,
+    "X0": 0.533,
+    "NOISE_STD": 0.006,
+    "NOISE_SEED": null,
+    "BASE": {
+      "look_back": 1,
+      "neighbors": 1,
+      "test_size": 0.4,
+      "hmin": 1,
+      "hmax": 7,
+      "hstep": 1
+    },
+    "ML1": {
+      "look_back": 1,
+      "neighbors": 3,
+      "test_size": 0.4,
+      "hmin": 1,
+      "hmax": 10,
+      "hstep": 1
+    }
+  },
+  "runs": [
+    {
+      "map": "logistic",
+      "expr": "r*x*(1-x)",
+      "r_range": [
+        3.5,
+        3.98
+      ],
+      "R_POINTS": 1000,
+      "clip_domain": null,
+      "method": "BASE",
+      "metrics": {
+        "r2_true_pos_only": 0.8295782235553767
+      },
+      "artifacts": {
+        "plot_lle": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\logistic_base_vs_true_20251021-170212.png",
+        "plot_bifur": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\logistic_bifur_20251021-170212.png"
+      },
+      "timestamp": "2025-10-21 17:04:36"
+    },
+    {
+      "map": "chebyshev",
+      "expr": "cos(r*acos(x))",
+      "r_range": [
+        1.0,
+        10.0
+      ],
+      "R_POINTS": 1000,
+      "clip_domain": null,
+      "method": "BASE",
+      "metrics": {
+        "r2_true_pos_only": -3.6590898688916855
+      },
+      "artifacts": {
+        "plot_lle": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\chebyshev_base_vs_true_20251021-170212.png",
+        "plot_bifur": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\chebyshev_bifur_20251021-170212.png"
+      },
+      "timestamp": "2025-10-21 17:07:01"
+    },
+    {
+      "map": "beta_shift",
+      "expr": "Mod(r*x, 1.0)",
+      "r_range": [
+        1.1,
+        10.0
+      ],
+      "R_POINTS": 1000,
+      "clip_domain": [
+        0.0,
+        1.0
+      ],
+      "method": "BASE",
+      "metrics": {
+        "r2_true_pos_only": -4.508671117753351
+      },
+      "artifacts": {
+        "plot_lle": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\beta_shift_base_vs_true_20251021-170212.png",
+        "plot_bifur": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\beta_shift_bifur_20251021-170212.png"
+      },
+      "timestamp": "2025-10-21 17:09:24"
+    },
+    {
+      "map": "skew_tent",
+      "expr": "Piecewise((x/r, x < r), ((1.0 - x)/(1.0 - r), True))",
+      "r_range": [
+        0.05,
+        0.95
+      ],
+      "R_POINTS": 1000,
+      "clip_domain": [
+        0.0,
+        1.0
+      ],
+      "method": "BASE",
+      "metrics": {
+        "r2_true_pos_only": 0.740952579246976
+      },
+      "artifacts": {
+        "plot_lle": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\skew_tent_base_vs_true_20251021-170212.png",
+        "plot_bifur": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\skew_tent_bifur_20251021-170212.png"
+      },
+      "timestamp": "2025-10-21 17:11:48"
+    },
+    {
+      "map": "ulam_abs",
+      "expr": "1.0 - r*Abs(x)",
+      "r_range": [
+        0.0,
+        2.0
+      ],
+      "R_POINTS": 1000,
+      "clip_domain": [
+        -1.0,
+        1.0
+      ],
+      "method": "BASE",
+      "metrics": {
+        "r2_true_pos_only": 0.9106992996888325
+      },
+      "artifacts": {
+        "plot_lle": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\ulam_abs_base_vs_true_20251021-170212.png",
+        "plot_bifur": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\ulam_abs_bifur_20251021-170212.png"
+      },
+      "timestamp": "2025-10-21 17:14:13"
+    },
+    {
+      "map": "gauss_boole",
+      "expr": "Mod(1.0/(x) + r, 1.0)",
+      "r_range": [
+        0.0,
+        1.0
+      ],
+      "R_POINTS": 1000,
+      "clip_domain": [
+        1e-08,
+        0.99999999
+      ],
+      "method": "BASE",
+      "metrics": {
+        "r2_true_pos_only": -11.163441700216902
+      },
+      "artifacts": {
+        "plot_lle": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\gauss_boole_base_vs_true_20251021-170212.png",
+        "plot_bifur": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\gauss_boole_bifur_20251021-170212.png"
+      },
+      "timestamp": "2025-10-21 17:16:37"
+    },
+    {
+      "map": "folded_sawtooth",
+      "expr": "1.0 - Abs(Mod(r*x, 2.0) - 1.0)",
+      "r_range": [
+        1.0,
+        2.0
+      ],
+      "R_POINTS": 1000,
+      "clip_domain": [
+        0.0,
+        1.0
+      ],
+      "method": "BASE",
+      "metrics": {
+        "r2_true_pos_only": 0.8444642169790793
+      },
+      "artifacts": {
+        "plot_lle": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\folded_sawtooth_base_vs_true_20251021-170212.png",
+        "plot_bifur": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\folded_sawtooth_bifur_20251021-170212.png"
+      },
+      "timestamp": "2025-10-21 17:19:01"
+    },
+    {
+      "map": "chebyshev_sine",
+      "expr": "sin(r*asin(x))",
+      "r_range": [
+        1.0,
+        10.0
+      ],
+      "R_POINTS": 1000,
+      "clip_domain": [
+        -1.0,
+        1.0
+      ],
+      "method": "BASE",
+      "metrics": {
+        "r2_true_pos_only": -3.9287227244790506
+      },
+      "artifacts": {
+        "plot_lle": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\chebyshev_sine_base_vs_true_20251021-170212.png",
+        "plot_bifur": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\chebyshev_sine_bifur_20251021-170212.png"
+      },
+      "timestamp": "2025-10-21 17:21:26"
+    },
+    {
+      "map": "mod_quadratic",
+      "expr": "Mod(r*x*(1.0 - x), 1.0)",
+      "r_range": [
+        2.0,
+        8.0
+      ],
+      "R_POINTS": 1000,
+      "clip_domain": [
+        0.0,
+        1.0
+      ],
+      "method": "BASE",
+      "metrics": {
+        "r2_true_pos_only": -0.6075232983323546
+      },
+      "artifacts": {
+        "plot_lle": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\mod_quadratic_base_vs_true_20251021-170212.png",
+        "plot_bifur": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\mod_quadratic_bifur_20251021-170212.png"
+      },
+      "timestamp": "2025-10-21 17:23:50"
+    },
+    {
+      "map": "saturated_mod",
+      "expr": "Mod(r*Piecewise((0.0, x<0.0), (x, x<=1.0), (1.0, True)), 1.0)",
+      "r_range": [
+        1.1,
+        10.0
+      ],
+      "R_POINTS": 1000,
+      "clip_domain": [
+        0.0,
+        1.0
+      ],
+      "method": "BASE",
+      "metrics": {
+        "r2_true_pos_only": -4.638038398699247
+      },
+      "artifacts": {
+        "plot_lle": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\saturated_mod_base_vs_true_20251021-170212.png",
+        "plot_bifur": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\saturated_mod_bifur_20251021-170212.png"
+      },
+      "timestamp": "2025-10-21 17:26:13"
+    },
+    {
+      "map": "mobius_mod",
+      "expr": "Mod((x + r) / (1.0 + r*Abs(x)), 1.0)",
+      "r_range": [
+        0.1,
+        5.0
+      ],
+      "R_POINTS": 1000,
+      "clip_domain": [
+        0.0,
+        1.0
+      ],
+      "method": "BASE",
+      "metrics": {
+        "r2_true_pos_only": -0.40368527060538595
+      },
+      "artifacts": {
+        "plot_lle": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\mobius_mod_base_vs_true_20251021-170212.png",
+        "plot_bifur": "D:\\Velichko\\PY_LLE\\results_demo_R2_plot\\base_noise0.006_len1000_1761055332\\mobius_mod_bifur_20251021-170212.png"
+      },
+      "timestamp": "2025-10-21 17:28:36"
+    }
+  ]
+}

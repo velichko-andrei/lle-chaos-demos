@@ -1,0 +1,26 @@
+{
+  "best_combo": {
+    "look_back": 1,
+    "neighbors": 1,
+    "hmax": 7,
+    "test_size": 0.4
+  },
+  "metrics": {
+    "R2_true_pos_only": 0.9923688442341099,
+    "R2_all": 0.7868965714872052,
+    "mean_SNR_dB": Infinity
+  },
+  "shapes": {
+    "full_series": [
+      1000,
+      100
+    ],
+    "r_points": 100
+  },
+  "paths": {
+    "npz": "D:\\Velichko\\PY_LLE\\results_demo_basic_principle\\1761061508\\data_full.npz",
+    "csv_true_vs_est": "D:\\Velichko\\PY_LLE\\results_demo_basic_principle\\1761061508\\true_vs_est_best.csv",
+    "csv_summary": "D:\\Velichko\\PY_LLE\\results_demo_basic_principle\\1761061508\\summary_all_combos.csv"
+  },
+  "timestamp": "2025-10-21 18:45:08"
+}

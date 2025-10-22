@@ -1,0 +1,147 @@
+{
+  "config": {
+    "maps": [
+      "logistic",
+      "sine",
+      "cubic_map",
+      "chebyshev"
+    ],
+    "R_POINTS_TUNE": 100,
+    "R_POINTS_FINAL": 1000,
+    "SERIES_LEN": 1000,
+    "WARMUP": 1000,
+    "X0": 0.533,
+    "grid": {
+      "look_back": [
+        1,
+        2,
+        3
+      ],
+      "neighbors": [
+        1,
+        3,
+        10
+      ],
+      "test_size": [
+        0.2,
+        0.4
+      ],
+      "hmax": [
+        2,
+        3,
+        7
+      ],
+      "hmin": 1,
+      "hstep": 1
+    },
+    "run_dir": "D:\\Velichko\\PY_LLE\\results_demo_tune_base\\1761051002",
+    "stamp": "20251021-155002",
+    "unix": 1761051002
+  },
+  "maps": [
+    {
+      "map": "logistic",
+      "expr": "r*x*(1-x)",
+      "r_range": [
+        3.5,
+        3.98
+      ],
+      "R_POINTS_TUNE": 100,
+      "R_POINTS_FINAL": 1000,
+      "best_base": {
+        "params": {
+          "look_back": 1,
+          "neighbors": 1,
+          "test_size": 0.4,
+          "hmax": 7,
+          "hmin": 1,
+          "hstep": 1
+        },
+        "r2_tune_true_pos_only": 0.9923688442341099,
+        "r2_final_true_pos_only": 0.991221139647844,
+        "grid_csv": "D:\\Velichko\\PY_LLE\\results_demo_tune_base\\1761051002\\logistic_grid_20251021-155002.csv",
+        "plot": "D:\\Velichko\\PY_LLE\\results_demo_tune_base\\1761051002\\logistic_base_vs_true_20251021-155002.png",
+        "final_npz": "D:\\Velichko\\PY_LLE\\results_demo_tune_base\\1761051002\\logistic_final_20251021-155002.npz"
+      },
+      "timestamp": "2025-10-21 15:59:46"
+    },
+    {
+      "map": "sine",
+      "expr": "r*sin(pi*x)",
+      "r_range": [
+        0.85,
+        1.0
+      ],
+      "R_POINTS_TUNE": 100,
+      "R_POINTS_FINAL": 1000,
+      "best_base": {
+        "params": {
+          "look_back": 1,
+          "neighbors": 1,
+          "test_size": 0.4,
+          "hmax": 7,
+          "hmin": 1,
+          "hstep": 1
+        },
+        "r2_tune_true_pos_only": 0.9938668934063658,
+        "r2_final_true_pos_only": 0.9925033012302362,
+        "grid_csv": "D:\\Velichko\\PY_LLE\\results_demo_tune_base\\1761051002\\sine_grid_20251021-155002.csv",
+        "plot": "D:\\Velichko\\PY_LLE\\results_demo_tune_base\\1761051002\\sine_base_vs_true_20251021-155002.png",
+        "final_npz": "D:\\Velichko\\PY_LLE\\results_demo_tune_base\\1761051002\\sine_final_20251021-155002.npz"
+      },
+      "timestamp": "2025-10-21 16:09:44"
+    },
+    {
+      "map": "cubic_map",
+      "expr": "r*x*(1.0 - x**2)",
+      "r_range": [
+        2.3,
+        3.0
+      ],
+      "R_POINTS_TUNE": 100,
+      "R_POINTS_FINAL": 1000,
+      "best_base": {
+        "params": {
+          "look_back": 1,
+          "neighbors": 1,
+          "test_size": 0.4,
+          "hmax": 3,
+          "hmin": 1,
+          "hstep": 1
+        },
+        "r2_tune_true_pos_only": 0.993729705648177,
+        "r2_final_true_pos_only": 0.9947711271082539,
+        "grid_csv": "D:\\Velichko\\PY_LLE\\results_demo_tune_base\\1761051002\\cubic_map_grid_20251021-155002.csv",
+        "plot": "D:\\Velichko\\PY_LLE\\results_demo_tune_base\\1761051002\\cubic_map_base_vs_true_20251021-155002.png",
+        "final_npz": "D:\\Velichko\\PY_LLE\\results_demo_tune_base\\1761051002\\cubic_map_final_20251021-155002.npz"
+      },
+      "timestamp": "2025-10-21 16:18:19"
+    },
+    {
+      "map": "chebyshev",
+      "expr": "cos(r*acos(x))",
+      "r_range": [
+        1.0,
+        10.0
+      ],
+      "R_POINTS_TUNE": 100,
+      "R_POINTS_FINAL": 1000,
+      "best_base": {
+        "params": {
+          "look_back": 1,
+          "neighbors": 1,
+          "test_size": 0.4,
+          "hmax": 2,
+          "hmin": 1,
+          "hstep": 1
+        },
+        "r2_tune_true_pos_only": 0.9986265025891502,
+        "r2_final_true_pos_only": 0.9985928469191808,
+        "grid_csv": "D:\\Velichko\\PY_LLE\\results_demo_tune_base\\1761051002\\chebyshev_grid_20251021-155002.csv",
+        "plot": "D:\\Velichko\\PY_LLE\\results_demo_tune_base\\1761051002\\chebyshev_base_vs_true_20251021-155002.png",
+        "final_npz": "D:\\Velichko\\PY_LLE\\results_demo_tune_base\\1761051002\\chebyshev_final_20251021-155002.npz"
+      },
+      "timestamp": "2025-10-21 16:26:24"
+    }
+  ]
+}
