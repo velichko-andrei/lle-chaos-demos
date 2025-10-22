@@ -14,6 +14,12 @@ Two estimator families:
 > 
 Full text: https://www.researchgate.net/profile/Andrei-Velichko
 
+🎥 Video demonstration
+
+For a quick, intuitive explanation of how the Lyapunov exponent estimation works, check out the short demo:
+👉 Watch the video here https://doigram.com/watch/vid_51
+
+It visually walks through the forecasting-error idea and how both BASE and ML1 extract the slope — perfect if you prefer to see the method in action rather than just read about it.
 ---
 
 ## 📁 Repository layout (current)
